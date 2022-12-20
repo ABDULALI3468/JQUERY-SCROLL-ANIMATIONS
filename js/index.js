@@ -72,3 +72,19 @@ jQuery(window).load(function () {
     revealCommands();
   }); // end on scroll
 });
+
+$("#box").on({
+  click: function () {
+    $(this).css("background", "orange");
+  },
+  mouseover: function () {
+    $(this).css("background", "pink");
+  },
+  mouseout: function () {
+    $(this).css("background", "lightblue");
+  },
+});
+
+$("button").click(function () {
+  $("#box").off("mouseover mouseout");
+});

@@ -53,4 +53,17 @@ jQuery(window).load(function () {
   jQuery(window).scroll(function () {
     revealCommands();
   });
+
+  jQuery(".EMPTY").click(function () {
+    // jQuery(".mas").empty();
+    jQuery(".mas").innerWidth("350px");
+  });
+  jQuery(".REMOVE").click(function () {
+    jQuery(".mas").remove();
+  });
 });
+
+
+$('p').toggle(3000, function() {
+  console.log("I AM A CALLBACK AND WILL RUN ONCE THE ABOVE OPERATION HAS BEEN COMPLETED INSHALLAH")
+})
